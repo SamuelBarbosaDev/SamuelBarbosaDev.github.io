@@ -1,64 +1,119 @@
+/* GLOBAL */
 :root {
+    font-family: sans-serif;
+    font-size: 62.5%;
     --primary-color: #fff;
     --s-color: #F7931A;
     --t-color: #4D4D4D;
+    --q-color: #000000;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: var(--primary-color);
+html{
+    scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+    
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+    
+h2{
+    font-size: 5.5rem;
+}
+
+h3{
+    font-size: 5rem;
+}
+
+h4{
+    font-size: 4.5rem;
+}
+
+h5{
+    font-size: 4rem;
+}
+
+h6{
+    font-size: 3.5rem;
+}
+
+/* HEADER */
 header{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #F7931A;
+    opacity: 80%;
 }
 
-.heading {
+.header {
     display: flex;
     width: 90%;
-    height: 40px;
+    height: 4rem;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
 }
 
-.heading-title{
+.heading{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #fff;
 }
 
-.nav-page-links{
+.nav-page > ul > li{
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+.nav-page-link{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
-.nav-page > ul > li{
-    display: inline;
-    margin-left: 15px;
+/* MAIN */
+.container-section{
+    height: 100vh;
+    width: 100vw;
 }
 
-main{
-    margin-top: 55px;
-    margin-bottom: 25px;
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.container {
-    height: 900px;
-    width: 900px;
+.background-svg{
+    background-image: url(../img/orange2.svg);
+    background-color: red;
+    color: white;
+}
+.container-content {
+    height: 100vh;
+    width: 120rem;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 5px var(--t-color);
 }
 
 .title{
@@ -71,12 +126,12 @@ footer{
     bottom: 0;
     width: 100%;
     margin: auto;
-    background-color: var(--t-color);
+    background-color: var(--q-color);
 }
 
 .page-footer{
     display: flex;
-    height: 50px;
+    height: 10rem;
     width: 90%;
     margin: 0 auto;
     align-items: center;
