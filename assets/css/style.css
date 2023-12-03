@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6{
     
 h1{
     font-size: 6rem;
-    text-transform: uppercase;
+    font-family: 'Montserrat'
 }
     
 h2{
@@ -102,12 +102,10 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .background-svg{
     background-image: url(../img/orange2.svg);
-    background-color: red;
     color: white;
 }
 .container-content {
