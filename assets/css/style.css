@@ -38,6 +38,10 @@ ul{
 }
 
 /* HEADER */
+#menu{
+    cursor: pointer;
+}
+
 #menu::after{
     content: '☰';
 
