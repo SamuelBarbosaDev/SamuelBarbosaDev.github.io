@@ -2,7 +2,7 @@
   "name": "react",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://SamuelBarbosaDev.github.io",
+  "homepage": "https://samuelbarbosadev.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/estree": "^1.0.6",
