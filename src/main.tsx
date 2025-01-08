@@ -4,16 +4,16 @@ import { Home } from './pages/home';
 import { Menu } from './components/menu';
 import { createRoot } from 'react-dom/client';
 import { Footer } from './components/footer';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { HashRouter, Routes, Route } from 'react-router';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <BrowserRouter>
+        <HashRouter basename='/'>
             <Menu />
             <Routes>
                 <Route path="/" Component={Home} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     </StrictMode>,
 );
