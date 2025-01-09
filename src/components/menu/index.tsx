@@ -1,5 +1,7 @@
-function menu(): void{
-    const e = document.querySelector('input.close-menu') as HTMLInputElement;
+import { Link } from 'react-router-dom';
+
+function closeMenu(): void {
+    const e = document.querySelector('input#close-menu') as HTMLInputElement;
     e.checked = false;
 }
 
@@ -10,9 +12,9 @@ export const Menu = () => {
             <label htmlFor="close-menu" id="menu"></label>
             <header>
                 <nav id="header-nav-links">
-                    <ul onClick={() => menu()}>
+                    <ul onClick={closeMenu}>
                         <li>
-                            <a href="#home">Home</a>
+                            <Link to="/#home">Home</Link>
                         </li>
                     </ul>
                 </nav>

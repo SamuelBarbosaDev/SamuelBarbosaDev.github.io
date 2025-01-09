@@ -8,7 +8,7 @@ import { HashRouter, Routes, Route } from 'react-router';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <HashRouter basename='/'>
+        <HashRouter>
             <Menu />
             <Routes>
                 <Route path="/" Component={Home} />
