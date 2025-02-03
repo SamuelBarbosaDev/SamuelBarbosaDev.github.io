@@ -1,0 +1,11 @@
+{
+    "posts": [
+        {
+            "name": "Zoin Company",
+            "url_photo": "https://raw.githubusercontent.com/SamuelBarbosaDev/SamuelBarbosaDev.github.io/refs/heads/main/src/assets/img/zoin_company.png",
+            "describe": "Portfólio construindo para apresentar os projetos e trabalhos do artista Zoin.",
+            "categories": ["html", "css"],
+            "link": "https://zoincompany.github.io/"
+        }
+    ]
+}
