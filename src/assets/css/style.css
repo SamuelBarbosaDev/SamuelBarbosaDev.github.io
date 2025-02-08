@@ -13,6 +13,9 @@
     --color-3: #0071C5;
     --color-4: #1F2A33; 
     --color-5: #dad6d6;
+    /* SVG Colors */
+    --filter-white: invert(98%) sepia(81%) saturate(575%) hue-rotate(191deg) brightness(119%) contrast(100%);
+    --filter-color-4: invert(13%) sepia(9%) saturate(1844%) hue-rotate(165deg) brightness(92%) contrast(89%);
 }
 
 *{
@@ -92,6 +95,10 @@ header{
     justify-content: center;
 }
 
+#header-nav-links > ul > li{
+    margin-top: 2rem;
+}
+
 #header-nav-links a{
     font-weight: bold;
     font-size: 4rem;
@@ -129,7 +136,7 @@ header{
     max-width: 100vw;
 }
 
-.home-content{
+.home-content, .post-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,6 +180,85 @@ h1 > span::before{
     z-index: -1;
 }
 
+/* Post */
+.post-content{
+    padding: 10rem 0 10rem 0;
+}
+
+#posts-gallery{
+    padding: 1rem;
+    columns: 36rem 3;
+    max-width: 120rem;
+}
+
+.post{
+    margin: 1rem;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    min-width: 25rem;
+    position: relative;
+    border-radius: 1rem;
+    align-items: center;
+    box-shadow: var(--color-4) 0.5rem 0.5rem 1rem;
+}
+
+.post > img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.post figcaption{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.post:hover figcaption{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .30s ease-in-out;
+    background-color: #1f2a33d4;/* #0070c5b9; */
+}
+
+.categories{
+    display: flex;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);/*  rgb(105, 104, 105);  */
+    border-radius: 5rem;
+    height: 5rem;
+    width: 5rem;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.category > img{
+    width: 3.2rem;
+    height: 3.2rem;
+    filter: var(--filter-color-4);
+}
+
+.description-post{
+    text-align: center;
+    margin: 1rem 5rem 3rem 5rem; 
+    max-height: 10rem;
+    overflow: hidden;
+    font-style: italic;
+    opacity: .8;
+    font-size: 1.4rem;
+}
+
 /* FOOTER */
 footer{
     position: relative;
@@ -180,6 +266,7 @@ footer{
     width: 100%;
     margin: auto;
     background-color: var(--color-white);
+    border-top: var(--color-3) solid 0.2rem;
 }
 
 .page-footer{
@@ -198,4 +285,16 @@ footer{
 .author{
     color: var(--color-1);
     font-weight: bold;
+}
+
+@media (max-width: 80rem){
+    /* Posts */
+    #posts-gallery{
+        grid-template-columns:  1fr;
+    }
+
+    /* .post{
+        height: 80%;
+        width: 80%;
+    } */
 }
