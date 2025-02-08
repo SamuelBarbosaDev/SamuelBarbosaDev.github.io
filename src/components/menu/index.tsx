@@ -17,6 +17,9 @@ export const Menu = () => {
                         <li>
                             <a href="#posts">Post</a>
                         </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </header>

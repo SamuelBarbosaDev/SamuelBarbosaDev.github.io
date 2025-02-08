@@ -18,6 +18,11 @@
     --filter-color-4: invert(13%) sepia(9%) saturate(1844%) hue-rotate(165deg) brightness(92%) contrast(89%);
 }
 
+/* Gap */
+:root{
+    --gap: 3rem;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +35,10 @@ html{
 
 body{
     font-size: 1.6rem;
+}
+
+h2{
+    font-size: 5.5rem;
 }
 
 a{
@@ -261,21 +270,51 @@ h1 > span::before{
 
 /* FOOTER */
 footer{
-    position: relative;
     bottom: 0;
     width: 100%;
     margin: auto;
-    background-color: var(--color-white);
-    border-top: var(--color-3) solid 0.2rem;
+    position: relative;
 }
 
 .page-footer{
+    width: 90%;
     display: flex;
     height: 10rem;
-    width: 90%;
     margin: 0 auto;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+}
+
+.page-footer > h2{
+    margin-bottom: var(--gap);
+}
+
+.list-contact{
+    width: 50%;
+    display: flex;
+    min-width: 48rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-contact > li > a{
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    padding: var(--gap);
+    color: var(--color-white);
+}
+
+.list-contact > li > a:hover{
+    opacity: 50%;
+}
+
+.contact-svg{
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    filter: var(--filter-white);
 }
 
 .page-footer > p{
