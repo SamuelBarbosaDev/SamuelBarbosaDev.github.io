@@ -2,7 +2,7 @@ export const Footer = () => {
     return (
         <footer className="background-color-3" id="contact">
             <section className="container-content page-footer">
-                <h2>Contato</h2>
+                <h2>Contatos</h2>
                 <ul className="list-contact">
                     <li>
                         <a href="https://github.com/SamuelBarbosaDev" target="_black" >
