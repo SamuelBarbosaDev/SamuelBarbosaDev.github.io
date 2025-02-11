@@ -12,13 +12,13 @@ export const Menu = () => {
                 <nav id="header-nav-links">
                     <ul onClick={closeMenu}>
                         <li>
-                            <a href="#home">HOME</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#posts">POST</a>
+                            <a href="#posts">Portfólio</a>
                         </li>
                         <li>
-                            <a href="#contact">CONTACT</a>
+                            <a href="#contact">Contatos</a>
                         </li>
                     </ul>
                 </nav>
