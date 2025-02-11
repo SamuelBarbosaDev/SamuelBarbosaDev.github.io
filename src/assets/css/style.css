@@ -154,7 +154,7 @@ header{
 }
 
 .background-white{
-    color: var(--color-black);
+    color: var(--color-4);
     background-color: var(--color-white);
 }
 
