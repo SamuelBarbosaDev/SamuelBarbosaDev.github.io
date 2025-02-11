@@ -38,6 +38,7 @@ export const Home = () => {
             </section>
             <section id="posts" className="container-section background-white">
                 <article className="container-content post-content">
+                <h2>Portfólio</h2>
                     <div id="posts-gallery">{renderPosts()}</div>
                 </article>
             </section>
