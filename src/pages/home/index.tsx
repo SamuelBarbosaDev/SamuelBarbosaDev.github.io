@@ -30,14 +30,14 @@ export const Home = () => {
     return (
         <>
             <section id="home" className="container-section background-color-3">
-                <article className="container-content home-content">
+                <article className="home-content">
                     <h1>
                         Olá, meu nome é <span>Samuel</span>.
                     </h1>
                 </article>
             </section>
             <section id="posts" className="container-section background-white">
-                <article className="container-content post-content">
+                <article className="post-content">
                 <h2>Portfólio</h2>
                     <div id="posts-gallery">{renderPosts()}</div>
                 </article>

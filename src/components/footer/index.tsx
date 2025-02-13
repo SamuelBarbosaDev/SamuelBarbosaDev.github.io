@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
-        <footer className="background-color-3" id="contact">
-            <section className="container-content page-footer">
+        <footer className="background-color-3 container-section">
+            <section className="footer-content" id="contact">
                 <h2>Contatos</h2>
                 <ul className="list-contact">
                     <li>
