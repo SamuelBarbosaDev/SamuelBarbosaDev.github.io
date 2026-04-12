@@ -1,13 +1,98 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio :)</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Barbosa | Desenvolvimento de Alto Impacto</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">SAMUEL<strong>BARBOSA</strong></div>
+            <ul class="nav-links">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato" class="btn-nav">Falar com Especialista</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>Eu construo os ativos digitais que fazem sua empresa escalar.</h1>
+            <p>Sites de alta performance e aplicativos Android intuitivos. Sem taxas mensais de servidor, sem termos técnicos confusos. Apenas resultados.</p>
+            <div class="hero-actions">
+                <a href="#contato" class="btn-primary">Iniciar meu Projeto</a>
+                <a href="#servicos" class="btn-secondary">Ver Soluções</a>
+            </div>
+        </section>
+
+        <section id="servicos" class="services container">
+            <h2 class="section-title">Soluções Sob Medida</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <h3>Sites de Alta Conversão</h3>
+                    <p class="card-desc">Otimizados para Google e carregamento instantâneo.</p>
+                    <ul class="benefits">
+                        <li>Custo de hospedagem zero</li>
+                        <li>Segurança total (sem banco de dados)</li>
+                        <li>Design focado em vendas</li>
+                    </ul>
+                    <p class="price">A partir de <strong>R$ 1.500</strong></p>
+                    <a href="https://wa.me/SEUNUMERO?text=Olá+Samuel,+quero+um+site+estático" class="btn-card">Encomendar Site</a>
+                </div>
+
+                <div class="card featured">
+                    <div class="badge">Mais Rentável</div>
+                    <h3>Apps Android Nativos</h3>
+                    <p class="card-desc">Sua ferramenta disponível no bolso do seu cliente.</p>
+                    <ul class="benefits">
+                        <li>Funcionamento Offline</li>
+                        <li>Publicação na Play Store</li>
+                        <li>Interface Premium (UX)</li>
+                    </ul>
+                    <p class="price">A partir de <strong>R$ 3.500</strong></p>
+                    <a href="https://wa.me/SEUNUMERO?text=Olá+Samuel,+quero+um+app+Android" class="btn-card">Encomendar App</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="products container">
+            <h2 class="section-title">Produtos Prontos (Pronta Entrega)</h2>
+            <p class="section-subtitle">Sistemas validados que eu adapto para sua marca em tempo recorde.</p>
+            <div class="grid-cards">
+                <div class="product-item">
+                    <h4>Sistema de Gestão de Finanças</h4>
+                    <p>Controle de caixa, lucros e gorjetas para autônomos.</p>
+                    <span class="tag">R$ 497 (Licença Única)</span>
+                </div>
+                <div class="product-item">
+                    <h4>Catálogo Digital Interativo</h4>
+                    <p>Substitua o PDF e receba pedidos direto no seu WhatsApp.</p>
+                    <span class="tag">R$ 797 (Licença Única)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="cta-final">
+            <div class="container">
+                <h2>Pronto para profissionalizar seu negócio?</h2>
+                <p>Eu só aceito 2 projetos por mês para garantir qualidade máxima. Garanta sua vaga.</p>
+                <div class="contact-box">
+                    <a href="https://wa.me/SEUNUMERO" class="contact-link">WhatsApp: (XX) XXXXX-XXXX - <Span>Em Breve</Span></a>
+                    <a href="mailto:seuemail@exemplo.com" class="contact-link">Email: email@email.com - <span>Em Breve</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Samuel Barbosa Dev. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
