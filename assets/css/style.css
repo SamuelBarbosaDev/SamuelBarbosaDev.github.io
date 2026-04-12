@@ -66,11 +66,13 @@ header .container { display: flex; justify-content: space-between; align-items: 
 .btn-card { display: block; text-align: center; padding: 15px; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
 
 /* Produtos Prontos */
-.products { padding: 80px; background: #f1f5f9; margin: 80px; border-radius: 20px; }
+.products { padding: 80px; background: #f1f5f9; margin: 80px auto; border-radius: 20px; }
 .product-item { background: white; padding: 25px; border-radius: 10px; border-left: 5px solid var(--accent); }
 .product-item h4 { margin-bottom: 10px; }
 .tag { display: inline-block; margin-top: 15px; color: var(--accent); font-weight: bold; }
-
+.products .section-subtitle{
+    margin-bottom: 15px;
+}
 /* Footer CTA */
 .cta-final { background: var(--primary); color: white; padding: 80px 0; text-align: center; }
 .cta-final h2 { font-size: 2.5rem; margin-bottom: 20px; }
