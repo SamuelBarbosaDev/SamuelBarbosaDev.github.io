@@ -1,19 +1,23 @@
-// Smooth Scroll para os links internos
+// Smooth Scroll fluído para links internos
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             window.scrollTo({
-                top: target.offsetTop - 80, // Compensa o header fixo
+                top: target.offsetTop - 75, // Ajustado para o novo tamanho do header fixo
                 behavior: 'smooth'
             });
         }
     });
 });
 
-// Efeito de aparecer ao scroll (opcional, para UI premium)
-const observerOptions = { threshold: 0.1 };
+// Efeito sutil de fade-in ao rolar a página (Estilo Apple Scroll)
+const observerOptions = { 
+    threshold: 0.05,
+    rootMargin: "0px 0px -50px 0px"
+};
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -23,9 +27,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.card, .product-item').forEach(el => {
+document.querySelectorAll('.card, .product-item, .problem-item').forEach(el => {
     el.style.opacity = "0";
-    el.style.transform = "translateY(20px)";
-    el.style.transition = "all 0.6s ease-out";
+    el.style.transform = "translateY(30px)";
+    el.style.transition = "opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)";
     observer.observe(el);
 });
